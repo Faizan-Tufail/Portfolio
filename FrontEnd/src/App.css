@@ -1,0 +1,75 @@
+/* App.css */
+
+body {
+  background-color: black;
+  transition: transform 0.5s ease;
+  color: aliceblue;
+font-family: "Montserrat", sans-serif;
+}
+
+.active {
+  color: red;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0rem 0.2rem;
+}
+
+.drop-down {
+  /* display: none; */
+  flex-direction: column;
+}
+/* 
+
+.skills{
+    text-align: center;
+    margin-left: 18%;
+    width: 70%;
+} */
+
+@media (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    margin-top: -2rem;
+    gap: 5rem;
+  }
+
+  .services-div {
+    display: inline;
+  }
+  .design,
+  .design-2 {
+    width: 95%;
+  }
+
+  .about-div {
+    display: inline;
+    border: 2px solid white;
+  }
+
+  .developer-img {
+    width: 80%;
+  }
+
+  .about-info {
+    width: 60%;
+  }
+}
+
+/* Home Ends Here */
+
+/* About Starts Here */
+
+.developer-img {
+  width: 30%;
+  margin-left: 3rem;
+}
+
+.about-info {
+  width: 50%;
+}
+
+.about-info p {
+  line-height: 2.2rem;
+}
+
+/* About Ends Here */

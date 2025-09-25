@@ -1,0 +1,144 @@
+nav {
+  position: fixed;
+  padding: 2px 0px;
+  margin: 0;
+  border-radius: 0px 0px 17px 17px;
+  align-items: center;
+  background: #364153;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 100;
+}
+
+nav img {
+  width: 100px;
+  margin-left: 96px;
+}
+
+.menu {
+  margin-right: 72px;
+}
+
+/* Default / desktop menu styles */
+.nav-menu,
+.menu ul {
+  display: flex; /* desktop = visible */
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  align-items: center;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li:hover {
+  color: orangered;
+}
+
+.menu ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu ul li a button {
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 18px;
+  border: 1px solid orangered;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu ul li a button:hover {
+  background-color: rgb(209, 59, 39);
+  color: #ffffff;
+}
+
+/* Hide mobile icon by default (desktop) */
+.menu-icon {
+  display: none;
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.mobile{
+  display: none;
+}
+
+/* Keep earlier breakpoints intact (only minor adjustments preserved) */
+@media (max-width: 1280px) {
+  nav {
+    
+  padding:0px;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  .menu {
+    margin-right: 65px;
+  }
+
+  .menu ul {
+    font-size: 15px;
+    font-weight: 600;
+    gap: 23px;
+  }
+
+  .menu ul li a button {
+    padding: 6px 13px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav img {
+    width: 90px;
+  }
+
+  .menu {
+    margin-right: 60px;
+  }
+
+  .menu ul {
+    font-size: 14px;
+    font-weight: 600;
+    gap: 18px;
+  }
+
+  .menu ul li a button {
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+/* === MOBILE: breakpoint set to 500px (per your requirement) === */
+ @media(max-width:768px){
+  .menu{
+    display: none;
+  }
+
+  nav{
+    padding:3px 0px;
+  }
+
+  nav img{
+    width: 80px;
+    margin-left: 30px;
+  }
+
+  .mobile{
+    display: flex;
+  }
+ }
